@@ -1,21 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import { GithubContext, useGlobalGithubContext } from "../context/context";
-import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
-const chartData = [
-  {
-    label: "HTML",
-    value: "13",
-  },
-  {
-    label: "CSS",
-    value: "160",
-  },
-  {
-    label: "Javascript",
-    value: "80",
-  },
-];
+import { useGlobalGithubContext } from "../context/context";
+import { Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
+// const chartData = [
+//   {
+//     label: "HTML",
+//     value: "13",
+//   },
+//   {
+//     label: "CSS",
+//     value: "160",
+//   },
+//   {
+//     label: "Javascript",
+//     value: "80",
+//   },
+// ];
 const Repos = () => {
   const { repos } = useGlobalGithubContext();
   const languages = repos.reduce((total, item) => {

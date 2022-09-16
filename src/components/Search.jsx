@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { MdSearch } from "react-icons/md";
-import { GithubContext, useGlobalGithubContext } from "../context/context";
+import { useGlobalGithubContext } from "../context/context";
 const Search = () => {
   const [user, setUser] = useState("");
   const { requests, error, searchGithubUser, isLoading } = useGlobalGithubContext();
